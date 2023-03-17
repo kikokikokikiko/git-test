@@ -3,8 +3,8 @@ touch            创建文件
 了解gitflow
 git push                    推到GitHub上
 git pull                    拉回本地
-git reset --hard HEAD
-git reset --hard HEAD^
+git reset --hard HEAD       从缓存区拉回并删除
+git reset --hard HEAD^      从github仓库拉回并删除
 git reset --soft HEAD^
 git fetch                   刷新分支
 git branch                  只显示本地的分支
@@ -15,7 +15,7 @@ git merge （） into （）      合并分支命令  
 ！！！！合并冲突：找到人对接之后再决定用谁的版本，不可🙅擅自更改！！！！
 
 
-git add                      将文件添加到暂缓区      
+git add                      将文件从工作区添加到暂缓区      
 git add .                    该文件夹下的所有文件全部上传
 git status -s                查看项目的当前状态： (A代表已经上传，AM代表修改过，需要重新git add）
 git commit -m                将暂缓区的内容添加到本地仓库中： 
@@ -40,8 +40,8 @@ git tag                        查看所有标签 
 git tag -a <tagname> -m "runoob.com标签"      指定标签信息命令
 git tag -s <tagname> -m "runoob.com标签"      PGP签名标签命令
 
-添加一个新的远程仓库: git remote add [shortname] [url]
-要查看当前配置有哪些远程仓库，可以用命令： git remote
+git remote add [shortname] [url]             添加一个新的远程仓库: 
+git remote                                   要查看当前配置有哪些远程仓库，可以用命令： 
 
 提取远程仓库：
 从远程仓库下载新分支与数据： git fetch  （仓库名）
