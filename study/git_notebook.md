@@ -1,11 +1,21 @@
+command + shift + p ： 
+package.json： 是入口指引
+生产环境：Dev
+开发环境：
+若是import的库，看“main”：之后的文件
+gitignore文件里的文件在本地更新后不会提示上传
+
+-G 全部环境
+-D 开发环境
+-S 生产环境
+
 touch            创建文件
-美丽姐补充：
 了解gitflow
 git push                    推到GitHub上
 git pull                    拉回本地
-git reset --hard HEAD       从缓存区拉回并删除
-git reset --hard HEAD^      从github仓库拉回并删除
-git reset --soft HEAD^
+git reset --hard HEAD       从暂缓区拉回并删除
+git reset --hard HEAD^      从github仓库拉回并删除,一直会取消上一次的操作，并将文件删除
+git reset --soft HEAD^      从github仓库拉回放入暂缓区,一直会取消上一次的操作，并将文件存入暂缓区
 git fetch                   刷新分支
 git branch                  只显示本地的分支
 git branch -a               显示本地以及github上的分支
@@ -13,7 +23,7 @@ git merge （） into （）      合并分支命令  
 ！！！！！测试分支、预发布分支绝对不可以往个人分支熵合！！！！！！
 正式分支可以合并到个人分支，对个人账户代码的功能进行补充、更新
 ！！！！合并冲突：找到人对接之后再决定用谁的版本，不可🙅擅自更改！！！！
-
+git
 
 git add                      将文件从工作区添加到暂缓区      
 git add .                    该文件夹下的所有文件全部上传
